@@ -1,0 +1,41 @@
+package com.ektha.tba.entity;
+
+public class Ticket {
+
+	int ticketNumber;
+	float ticketAmount;
+
+	public Ticket() {
+
+	}
+
+	public Ticket(int ticketNumber, float ticketAmount) {
+		super();
+		this.ticketNumber = ticketNumber;
+		this.ticketAmount = ticketAmount;
+	}
+
+	public int getTicketNumber() {
+		return ticketNumber;
+	}
+
+	public void setTicketNumber(int ticketNumber) {
+		this.ticketNumber = ticketNumber;
+	}
+
+	public float getTicketAmount() {
+		return ticketAmount;
+	}
+
+	public void setTicketAmount(float ticketAmount) {
+		this.ticketAmount = ticketAmount;
+	}
+
+	@Override
+	public String toString() {
+		return "Ticket [ticketNumber=" + ticketNumber + ", ticketAmount=" + ticketAmount + "]";
+	}
+	
+	
+
+}

@@ -1,0 +1,14 @@
+package com.ektha.pms.service;
+
+import java.util.ArrayList;
+
+import com.ektha.pms.entity.Product;
+
+public class ProductService {
+
+	ArrayList<Product> arrayList = new ArrayList<Product>();
+	
+	
+	
+	
+}

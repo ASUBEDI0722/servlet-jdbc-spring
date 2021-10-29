@@ -1,0 +1,25 @@
+package com.ektha.tba.service;
+
+import com.ektha.tba.entity.BankPayment;
+import com.ektha.tba.entity.CreditCard;
+import com.ektha.tba.entity.Ticket;
+
+public class PaymentService {
+
+	public boolean processPayment(CreditCard creditCard, BankPayment bankPayment) {
+		
+		float ticketPrice = creditCard.getTicketPrice();
+		
+		float availableCredit = bankPayment.getAvailableCredit();
+		
+		
+		return false;
+		
+		
+		
+	}
+	
+	
+
+
+}

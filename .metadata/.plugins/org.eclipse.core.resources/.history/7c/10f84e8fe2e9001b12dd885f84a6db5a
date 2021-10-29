@@ -1,0 +1,12 @@
+package com.ektha.corejava.name;
+
+public class Person {
+
+	String firstName;
+	String lastName;
+	int age;
+	
+	public Person() {
+
+	}
+}

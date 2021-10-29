@@ -1,0 +1,18 @@
+package com.ektha.tba.service;
+
+import com.ektha.tba.entity.BankPayment;
+import com.ektha.tba.entity.CreditCard;
+import com.ektha.tba.entity.Ticket;
+
+public class PaymentService {
+
+	public boolean processPayment(BankPayment bankPayment, float ticketAmount) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	
+	
+
+
+}

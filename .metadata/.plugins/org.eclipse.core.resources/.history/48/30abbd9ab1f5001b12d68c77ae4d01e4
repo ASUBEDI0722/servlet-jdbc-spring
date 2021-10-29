@@ -1,0 +1,61 @@
+package com.ektha.tba.app;
+
+import java.util.Scanner;
+
+import com.ektha.tba.controller.BookingController;
+import com.ektha.tba.entity.BankPayment;
+
+public class BookingPortal {
+
+	public static void main(String[] args) {
+
+		String nameOnCard;
+		String creditCardNumber;
+		int cvv;
+		float ticketAmount;
+		float availableCredit;
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Enter name on your card.");
+		nameOnCard = scanner.next();
+
+		System.out.println("Enter your credit card number");
+		creditCardNumber = scanner.next();
+
+		System.out.println("Enter CVV");
+		cvv = scanner.nextInt();
+
+		System.out.println("Enter ticket price.");
+		ticketAmount = scanner.nextFloat();
+
+		System.out.println("Enter available credit.");
+		availableCredit = scanner.nextFloat();
+
+		BankPayment bankPayment = initializeData(nameOnCard, creditCardNumber, cvv, availableCredit);
+		bookTicket(ticketAmount, bankPayment);
+
+	}
+
+	public static BankPayment initializeData(String name, String ccNumber, int cvv, float availableCredit) {
+
+		BankPayment bankPayment = new BankPayment();
+		bankPayment.setNameOnCard(name);
+		bankPayment.setCreditCardNumber(ccNumber);
+		bankPayment.setCvv(cvv);
+		bankPayment.setAvailablCredit(availableCredit);
+		
+		return bankPayment;
+	}
+	
+	public static void bookTicket(float ticketAmount, BankPayment bankPayment) {
+		
+		BookingController bookingController = new BookingController();
+		bookingController.bookTicket(ticketAmount, bankPayment);
+		
+		
+	}
+	
+	
+
+}

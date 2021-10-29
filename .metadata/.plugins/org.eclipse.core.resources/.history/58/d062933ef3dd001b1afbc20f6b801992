@@ -1,0 +1,20 @@
+package com.ektha.corejava.ooppractice;
+
+public class Practice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		int [] arrayNumbers = {3, 6, 7, 9, 10, 11, 16, 18};
+		for(int i : arrayNumbers) {
+			if ( i % 2 ==0) {
+				System.out.println("The number is even");
+			}
+			else {
+				System.out.println("The number is odd");
+			}
+		}
+	}
+
+}

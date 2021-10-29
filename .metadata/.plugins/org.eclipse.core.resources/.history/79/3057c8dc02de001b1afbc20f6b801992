@@ -1,0 +1,31 @@
+package com.ektha.corejava.ooppractice;
+
+public class Circle {
+
+	
+
+	public double Circle(double radius, double pi) {
+		
+		
+
+		double area = pi * radius * radius;
+		System.out.println("Area of circle: " + area);
+		
+		double circumference = 2 * pi * radius;
+		System.out.println("Circumference: " + circumference);
+		
+		return area;
+
+	}
+
+	public void area() {
+		
+
+	}
+	public void circumference() {
+		
+	}
+
+	
+
+}

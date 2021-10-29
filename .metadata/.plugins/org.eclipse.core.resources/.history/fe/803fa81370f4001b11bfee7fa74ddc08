@@ -1,0 +1,15 @@
+package com.ektha.app.dao;
+
+import cm.ektha.app.entity.Customer;
+
+public class CustomerDAO extends CustomerBaseDAO implements ICustomerDAO {
+	
+	private static String SQL_INSERT = "insert into customer_schema.customer(id, firstname, lastname, gender, email, city) values (?,?,?,?,?,?)";
+
+	@Override
+	public void addCustomer(Customer customer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

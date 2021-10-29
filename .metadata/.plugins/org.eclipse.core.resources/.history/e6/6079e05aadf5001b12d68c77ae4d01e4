@@ -1,0 +1,15 @@
+package com.ektha.tba.entity;
+
+public class TicketDBTable {
+	
+	
+	
+	Ticket ticket = new Ticket();
+
+	public void save(Ticket ticket2) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

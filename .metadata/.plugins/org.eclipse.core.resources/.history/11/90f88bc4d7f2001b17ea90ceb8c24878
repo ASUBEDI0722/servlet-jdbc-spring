@@ -1,0 +1,11 @@
+package com.ektha.corejava.dishproject;
+
+
+public class Dish {
+	
+	private String name;
+	private boolean vegeterian;
+	private int calories;
+	private DishType dishType;
+
+}

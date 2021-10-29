@@ -1,0 +1,25 @@
+package com.ektha.corejava.item;
+
+public class ItemTest {
+
+	public static void main(String[] args) {
+		
+//		int a = 5;
+//		int b =9;
+
+		IArithmetic iArithmetic = (a, b)-> {
+			return a+b;
+			
+			
+			
+			
+		};
+		
+//		public int addNumbers(int a, int b) {
+//			
+//			return 0;
+//		}
+		
+	}
+
+}

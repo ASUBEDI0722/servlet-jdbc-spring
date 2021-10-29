@@ -1,0 +1,10 @@
+package com.ektha.tba.entity;
+
+public class BankPayment {
+	
+	String nameOnCard;
+	String creditCardNumber;
+	int CVV;
+	float availableFunds;
+
+}

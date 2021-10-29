@@ -1,0 +1,26 @@
+package com.ektha.corejava.ooppractice;
+
+public class Customer {
+
+	int customerId;
+	String customerName;
+	String customerDob;
+	String customerEmail;
+
+	public Customer(int customerId, String customerName, String customerDob, String customerEmail) {
+
+		super();
+		
+		this.customerId = customerId;
+		this.customerName = customerName;
+		this.customerDob = customerDob;
+		this.customerEmail = customerEmail;
+	}
+
+	public String printCustomerDetails() {
+		
+		String customerDetails = ("Customer Id: " + customerId + "Customer Name: " + customerName + "Customer DOB: " + customerDob + "Customer Email" + customerEmail) ;
+		
+		return customerDetails;
+	}
+}

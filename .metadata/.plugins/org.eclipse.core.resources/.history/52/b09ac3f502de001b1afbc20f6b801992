@@ -1,0 +1,16 @@
+package com.ektha.corejava.ooppractice;
+
+
+public class AreaDemo {
+
+	public static void main(String[] args) {
+
+		Circle circle = new Circle(4, 3.14);
+		circle.area();
+		circle.circumference();
+	
+		
+		
+	}
+
+}

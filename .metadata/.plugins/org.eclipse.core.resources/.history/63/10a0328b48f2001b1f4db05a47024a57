@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Customer Registration Form</title>
+
+<meta charset="ISO-8859-1">
+
+
+</head>
+
+<body bgcolor="Lightskyblue" style="text-align: center">
+
+	<form>
+
+		<label for="FullName"><b>Full Name</b> </label> <input type="text"
+			placeholder="Enter your Full Name" name="FullName" required>
+
+		<label for="Email"><b>Email</b> </label> <input type="text"
+			placeholder="Enter your email address" required> <label
+			for="ContactNumber"><b>Contact Number</b> </label> <input type="text"
+			placeholder="Enter your contact number" required> <label
+			for="Password"><b>Password</b> </label> <input type="text"
+			placeholder="Enter a password" required>
+
+
+	</form>
+
+</body>
+</html>

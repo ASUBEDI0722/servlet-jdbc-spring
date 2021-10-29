@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="CustomerManagementSystem_AS"/>
+<aop-project name="plainjdbc_AS"/>
+<aop-project name="SpringProject_AS"/>
+<aop-project name="com.oms"/>
+<aop-project name="ordermanagementsystem"/>
+<aop-project name="mvcproject"/>
+<aop-project name="VehicleRegistration"/>
+<aop-project name="springorm"/>
+<aop-project name="EmployeeSpring"/>
+<aop-project name="Addition_AS"/>
+<aop-project name="Airthematic"/>
+<aop-project name="registration"/>
+</aop-reference-model>

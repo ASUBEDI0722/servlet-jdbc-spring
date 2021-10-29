@@ -1,0 +1,30 @@
+package com.ektha.tba.service;
+
+import java.util.Random;
+
+
+public class PaymentService {
+
+	
+	public String bookTicket(float availableCredit, float ticketAmount) {
+		
+		BookingService bookingService = new BookingService();
+
+		String randomNumber = null;
+
+		if (availableCredit >= ticketAmount) {
+
+			randomNumber = bookingService.bookTicket();
+		}
+
+		
+		return randomNumber;
+
+	}
+
+	
+		
+	
+
+}
+

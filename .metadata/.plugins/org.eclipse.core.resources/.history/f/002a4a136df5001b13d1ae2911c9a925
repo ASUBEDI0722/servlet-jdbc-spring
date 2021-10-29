@@ -1,0 +1,32 @@
+package com.ektha.tba.service;
+
+import com.ektha.tba.entity.CreditCard;
+
+public class PaymentService {
+
+	public String bookTicket(float availableCredit, float ticketAmount) {
+
+		BookingService bookingService = new BookingService();
+
+		String confirmationNumber = null;
+
+		if (availableCredit >= ticketAmount) {
+
+			confirmationNumber = bookingService.bookTicket();
+		}
+
+		return confirmationNumber;
+
+	}
+	
+public static CreditCard initiateData(String name, String ccNumber, int cvv, float availableCredit) {
+		
+		CreditCard creditCard = new CreditCard();
+		
+		return creditCard;
+		
+		
+
+	}
+
+}

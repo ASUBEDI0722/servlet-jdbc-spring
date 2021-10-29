@@ -1,0 +1,5 @@
+package com.ektha.tba.entity;
+
+public class PaymentDBTable {
+
+}

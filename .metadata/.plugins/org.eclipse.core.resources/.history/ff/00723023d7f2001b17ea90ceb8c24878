@@ -1,0 +1,6 @@
+package com.ektha.corejava.dishdetails;
+
+public interface IDishCompare {
+	
+
+}

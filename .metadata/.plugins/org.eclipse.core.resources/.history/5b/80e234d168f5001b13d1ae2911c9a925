@@ -1,0 +1,23 @@
+package com.ektha.tba.entity;
+
+public class PaymentDBTable {
+	
+	BankPayment bankPayment = new BankPayment();
+	
+	public BankPayment setValue() {
+		
+		bankPayment.setAvailablCredit(600);
+		bankPayment.setNameOnCard("Anamika");
+		bankPayment.setCreditCardNumber("1234567");
+		bankPayment.setCvv(123);
+		
+		
+		return bankPayment;
+		
+		
+		
+	}
+	
+	
+
+}

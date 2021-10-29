@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.ektha.corejava.dishdetails.DishDetails&apos; to &apos;Dish&apos;&#x0D;&#x0A;- Original project: &apos;DishDetails_AS&apos;&#x0D;&#x0A;- Original element: &apos;com.ektha.corejava.dishdetails.DishDetails&apos;&#x0D;&#x0A;- Renamed element: &apos;com.ektha.corejava.dishdetails.Dish&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;DishDetails&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.ektha.corejava.dishdetails{DishDetails.java[DishDetails" matchStrategy="1" name="Dish" qualified="false" references="true" similarDeclarations="false" stamp="1626879200179" textual="false" version="1.0"/>
+</session>

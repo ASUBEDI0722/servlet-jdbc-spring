@@ -1,0 +1,23 @@
+package com.ektha.corejava.ooppractice;
+
+public class Customer {
+
+	int id;
+	String name;
+	String dob;
+	String email;
+	
+	
+
+	public Customer(int id, String name, String dob, String email) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.dob = dob;
+		this.email = email;
+	}
+
+
+
+	
+}

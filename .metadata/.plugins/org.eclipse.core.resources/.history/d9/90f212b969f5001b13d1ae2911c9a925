@@ -1,0 +1,11 @@
+package com.ektha.tba.controller;
+
+public class BookingController {
+	
+	public String bookTicket() {
+		
+		
+		
+	}
+
+}

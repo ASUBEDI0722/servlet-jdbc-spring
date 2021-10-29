@@ -1,0 +1,15 @@
+package com.ektha.tba.service;
+
+import com.ektha.tba.entity.CreditCard;
+
+public class PaymentService {
+
+	
+	public boolean processPayment(String nameOnCard, String creditCardNumber, int cvv) {
+		
+		CreditCard creditCard = new CreditCard();
+		
+	
+
+}
+}

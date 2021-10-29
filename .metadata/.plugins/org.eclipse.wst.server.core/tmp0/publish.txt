@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Wed Sep 29 13:59:51 CDT 2021
+org.eclipse.jst.jee.server\:/binary\:C\:\\bcjJUNE21\\dev\\workspace\\spring_ws\\mvcproject\\src\\main\\webapp\\WEB-INF\\lib\\spring-web-5.1.5.RELEASE.jar=WEB-INF/lib/spring-web-5.1.5.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\bcjJUNE21\\dev\\workspace\\spring_ws\\mvcproject\\src\\main\\webapp\\WEB-INF\\lib\\spring-web-5.1.5.RELEASE-sources.jar=WEB-INF/lib/spring-web-5.1.5.RELEASE-sources.jar
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\BootCampUser039\\.m2\\repository\\org\\springframework\\spring-web\\4.3.11.RELEASE\\spring-web-4.3.11.RELEASE.jar=WEB-INF/lib/spring-web-4.3.11.RELEASE.jar

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.ektha.app.dao.IVehicleDAO&apos; to &apos;VehicleDAO&apos;&#x0D;&#x0A;- Original project: &apos;VehicleRegistration&apos;&#x0D;&#x0A;- Original element: &apos;com.ektha.app.dao.IVehicleDAO&apos;&#x0D;&#x0A;- Renamed element: &apos;com.ektha.app.dao.VehicleDAO&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;IVehicleDAO&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ektha.app.dao{IVehicleDAO.java[IVehicleDAO" matchStrategy="1" name="VehicleDAO" qualified="false" references="true" similarDeclarations="false" stamp="1632857810026" textual="false" version="1.0"/>
+</session>

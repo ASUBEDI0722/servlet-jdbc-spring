@@ -1,0 +1,6 @@
+127.0.0.1 - - [20/Aug/2021:22:34:14 -0500] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [20/Aug/2021:22:34:15 -0500] "GET /loginpage/login.jsp HTTP/1.1" 200 703
+0:0:0:0:0:0:0:1 - - [20/Aug/2021:22:34:15 -0500] "GET /loginpage/login.css HTTP/1.1" 200 300
+0:0:0:0:0:0:0:1 - - [20/Aug/2021:22:34:24 -0500] "POST /loginpage/LoginServlet HTTP/1.1" 404 777
+0:0:0:0:0:0:0:1 - - [20/Aug/2021:22:34:35 -0500] "GET /loginpage/login.jsp HTTP/1.1" 200 703
+0:0:0:0:0:0:0:1 - - [20/Aug/2021:22:34:44 -0500] "POST /loginpage/LoginServlet HTTP/1.1" 404 777

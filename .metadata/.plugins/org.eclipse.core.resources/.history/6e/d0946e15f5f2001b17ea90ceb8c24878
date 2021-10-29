@@ -1,0 +1,60 @@
+package com.ektha.pms.app;
+
+import java.util.Scanner;
+
+import com.ektha.pms.dao.ProductDAO;
+import com.ektha.pms.entity.Product;
+import com.ektha.pms.service.ProductService;
+
+public class ProductApp {
+
+	public static void main(String[] args) {
+		
+		int id;
+		String name;
+		float price;
+		String description;
+		int quantity;
+		String product;
+				
+		ProductService productService = new ProductService();
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("1.Add Product");
+		System.out.println("2.Find Product by Id");
+		System.out.println("Find all Products");
+		System.out.println("Update product by Id");
+		System.out.println("Delete product by Id");
+		
+		product = scanner.next();
+		
+		if(product.equals("1")) {
+			
+			System.out.println("Enter product details");
+			System.out.println("Enter product id");
+			id = scanner.nextInt();
+			System.out.println("Enter product name");
+			name = scanner.next();
+			System.out.println("Enter product price");
+			price = scanner.nextFloat();
+			System.out.println("Enter product description");
+			description = scanner.next();
+			System.out.println("Enter product quantity");
+			quantity = scanner.nextInt();
+			
+			Product product1 = new Product(id, name, price, description, quantity);
+			
+			productService.addProduct(product1);
+			
+			
+			
+			
+		}
+
+		
+		
+		
+	}
+
+}

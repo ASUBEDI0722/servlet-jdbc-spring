@@ -1,0 +1,15 @@
+package com.ektha.tba.service;
+
+public class PaymentService {
+
+	public boolean bookTicket(float availableCredit, float ticketAmount) {
+
+		if (availableCredit >= ticketAmount) {
+
+			return true;
+		}
+		return false;
+
+	}
+
+}

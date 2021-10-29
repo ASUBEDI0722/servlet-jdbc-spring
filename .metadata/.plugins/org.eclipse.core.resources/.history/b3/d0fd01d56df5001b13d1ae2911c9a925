@@ -1,0 +1,38 @@
+package com.ektha.tba.entity;
+
+public class TicketDBTable {
+
+	String ticketNo;
+	String travellingDate;
+
+	public TicketDBTable() {
+
+	}
+
+	public TicketDBTable(String ticketNo, String travellingDate) {
+		this.ticketNo = ticketNo;
+		this.travellingDate = travellingDate;
+	}
+
+	public String getTicketNo() {
+		return ticketNo;
+	}
+
+	public void setTicketNo(String ticketNo) {
+		this.ticketNo = ticketNo;
+	}
+
+	public String getTravellingDate() {
+		return travellingDate;
+	}
+
+	public void setTravellingDate(String travellingDate) {
+		this.travellingDate = travellingDate;
+	}
+
+	@Override
+	public String toString() {
+		return "TicketDBTable [ticketNo=" + ticketNo + ", travellingDate=" + travellingDate + "]";
+	}
+
+}

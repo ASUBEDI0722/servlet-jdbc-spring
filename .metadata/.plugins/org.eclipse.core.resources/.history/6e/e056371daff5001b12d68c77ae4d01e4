@@ -1,0 +1,14 @@
+package com.ektha.tba.service;
+
+import com.ektha.tba.entity.BankPayment;
+
+public class PaymentService {
+
+	public boolean processPayment(BankPayment bankPayment, float ticketAmount) {
+		
+		
+
+		return false;
+	}
+
+}

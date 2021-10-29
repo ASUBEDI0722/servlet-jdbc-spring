@@ -1,0 +1,68 @@
+package com.sit.app.controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.sit.app.dao.IProductDAO;
+import com.sit.app.dao.ProductDAO;
+
+/**
+ * Servlet implementation class ProductFindAllServlet
+ */
+@WebServlet("/ProductFindAllServlet")
+
+public class ProductFindAllServlet extends HttpServlet {
+
+	private static final long serialVersionUID = 1L;
+
+	IProductDAO productDAO = null;
+
+	public void init(ServletConfig config) throws ServletException {
+
+		productDAO = new ProductDAO();
+	}
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		ArrayList<Product> productList = (ArrayList<Product>) productDAO.findAll();
+
+		PrintWriter out = response.getWriter();
+		
+		
+
+		for (Product product : productList) {
+			
+			out.println("<html><body>");
+			out.println("h2 align=center>Product Record</h2>");
+			out.println("<div align=center>");
+			out.println("<table border=2");
+			out.println("<tr><th>ProductId</th><th>Name</th><th>Price</th><th>Description</th></tr>");
+			out.println("<tr>");
+
+			out.println("<td>" + product.getId() + "</td>");
+			out.println("<td>" + product.getName() + "</td>");
+			out.println("<td>" + product.getPrice() + "</td>");
+			out.println("<td>" + product.getDescription() + "</td>");
+			out.println("</tr>");
+			out.println("</table></body></html>");
+
+		}
+
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

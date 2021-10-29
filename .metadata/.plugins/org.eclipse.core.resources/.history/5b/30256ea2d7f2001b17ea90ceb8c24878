@@ -1,0 +1,5 @@
+package com.ektha.corejava.dishproject;
+
+public enum DishType {
+
+}

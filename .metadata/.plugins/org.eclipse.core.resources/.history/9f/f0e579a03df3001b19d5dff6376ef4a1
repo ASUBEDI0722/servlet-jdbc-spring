@@ -1,0 +1,68 @@
+package com.ektha.corejava.dishproject;
+
+import java.util.ArrayList;
+
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		ArrayList<Dish> arrayList = new ArrayList<Dish>();
+		arrayList.add(new Dish("Pork Fry", false, 800, DishType.MEAT));
+		arrayList.add(new Dish("Pepper Chicken", false, 700, DishType.MEAT));
+		arrayList.add(new Dish("BBQ Ribs", false, 600, DishType.MEAT));
+		arrayList.add(new Dish("French Fries", true, 500, DishType.OTHERS));
+		arrayList.add(new Dish("Double Cheeze Pizza", true, 400, DishType.OTHERS));
+		arrayList.add(new Dish("Season Fruit", true, 120, DishType.OTHERS));
+		arrayList.add(new Dish("Salmon", false, 500, DishType.FISH));
+		arrayList.add(new Dish("Prawns", false, 300, DishType.FISH));
+		arrayList.add(new Dish("Rice pudding", true, 200, DishType.OTHERS));
+		arrayList.add(new Dish("Milk Shake", true, 150, DishType.OTHERS));
+		
+		
+		ArrayList<Dish> arrList = printDishList(arrayList);
+		
+		
+		
+		
+		
+		System.out.println(arrList);
+		
+//		for (Dish dish : arrList) {
+//			System.out.println(dish.getName() + dish.isVegeterian() + dish.getCalories() + dish.getDishType());
+//		}
+		
+		
+//		for (Dish dish : arrayList) {
+//			System.out.println(dish);
+//		}
+		
+	}
+	
+	public static ArrayList<Dish> printDishList(ArrayList<Dish> dish){
+		
+		ArrayList<Dish> dish1 = new ArrayList<Dish>();
+		
+				for(Dish dish2: dish1) {
+					if(dish2.getCalories()>300) {
+						dish1.add(dish2);
+					}
+				}
+				return dish1;
+		
+		
+			//Dish d = dish.get(i);
+//			System.out.println(dish.get(i));
+//			System.out.println(d);
+		
+	
+			
+
+		
+
+		
+		
+		
+	}
+
+}

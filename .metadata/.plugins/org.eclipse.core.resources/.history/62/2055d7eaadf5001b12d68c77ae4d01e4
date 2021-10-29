@@ -1,0 +1,48 @@
+package com.ektha.tba.service;
+
+import java.util.Random;
+
+import com.ektha.tba.dao.BookingDAO;
+import com.ektha.tba.entity.BankPayment;
+import com.ektha.tba.entity.Ticket;
+
+public class BookingService {
+
+	public String bookTicket(float ticketAmount, BankPayment bankPayment) {
+
+		PaymentService paymentService = new PaymentService();
+		BookingDAO bookingDAO = new BookingDAO();
+
+		if (paymentService.processPayment(bankPayment, ticketAmount)) {
+			
+			Ticket ticket = new Ticket();
+
+			String alphaCharacter = "XUJ";
+			Random random = new Random();
+			int randomNumber = random.nextInt(783567);
+			String ticketNumber = alphaCharacter + randomNumber;
+
+			bookingDAO.saveTicket(ticket);
+			
+			return ticketNumber;
+		}
+		
+		return null;
+
+//		Ticket ticket = new Ticket();
+//
+//		String alphaCharacter = "XUJ";
+//
+//		Random random = new Random();
+//
+//		int randomNumber = random.nextInt(783567);
+//
+//		String ticketNumber = alphaCharacter + randomNumber;
+//
+//		ticket.setTicketNumber(ticketNumber);
+//
+//		return ticketNumber;
+
+	}
+
+}

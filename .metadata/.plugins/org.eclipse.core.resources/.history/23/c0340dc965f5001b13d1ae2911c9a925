@@ -1,0 +1,64 @@
+package com.ektha.tba.entity;
+
+public class BankPayment {
+
+	String nameOnCard;
+	String creditCardNumber;
+	int cvv;
+	float availableCredit;
+
+	public BankPayment() {
+
+	}
+
+	public BankPayment(String nameOnCard, String creditCardNumber, int cvv, float availableCredit) {
+		this.nameOnCard = nameOnCard;
+		this.creditCardNumber = creditCardNumber;
+		this.cvv = cvv;
+		this.availableCredit = availableCredit;
+	}
+
+	public String getNameOnCard() {
+		return nameOnCard;
+	}
+
+	public void setNameOnCard(String nameOnCard) {
+		this.nameOnCard = nameOnCard;
+	}
+
+	public String getCreditCardNumber() {
+		return creditCardNumber;
+	}
+
+	public void setCreditCardNumber(String creditCardNumber) {
+		this.creditCardNumber = creditCardNumber;
+	}
+
+	public int getCvv() {
+		return cvv;
+	}
+
+	public void setCvv(int cvv) {
+		cvv = 123;
+		this.cvv = cvv;
+	}
+
+	public float getAvailableCredit() {
+		return availableCredit;
+	}
+
+	public void setAvailablCredit(float availablCredit) {
+		availablCredit = 4000;
+		this.availableCredit = availablCredit;
+	}
+
+	@Override
+	public String toString() {
+		return "BankPayment [nameOnCard=" + nameOnCard + ", creditCardNumber=" + creditCardNumber + ", cvv=" + cvv
+				+ ", availablCredit=" + availableCredit + "]";
+	}
+	
+	
+
+	
+}

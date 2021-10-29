@@ -1,0 +1,23 @@
+package com.ektha.pms.service;
+
+import java.util.ArrayList;
+
+import com.ektha.pms.dao.ProductDAO;
+import com.ektha.pms.entity.Product;
+
+public class ProductService {
+	
+	ProductDAO productDao = new ProductDAO();
+
+	public Product addProduct(Product product) {
+		
+		Product product1 = productDao.addProduct(product);
+		
+		return product1;
+		
+		
+	}
+
+	
+	
+}

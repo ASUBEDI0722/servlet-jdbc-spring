@@ -1,0 +1,14 @@
+package com.sit.app.dao;
+
+import java.util.List;
+
+import com.sit.app.controller.Product;
+
+public interface IProductDAO {
+	
+	void add(Product product);
+	Product findById(int id);
+	List<Product>findAll();void update(Product product);
+	void delete(int id);
+
+}

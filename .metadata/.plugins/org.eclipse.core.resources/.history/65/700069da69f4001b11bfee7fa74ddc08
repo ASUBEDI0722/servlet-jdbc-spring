@@ -1,0 +1,5 @@
+package com.ektha.app.dao;
+
+public enum GenderType {
+
+}

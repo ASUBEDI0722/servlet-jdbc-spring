@@ -1,0 +1,24 @@
+package com.ektha.tba.service;
+
+import com.ektha.tba.entity.BankPayment;
+import com.ektha.tba.entity.CreditCard;
+import com.ektha.tba.entity.Ticket;
+
+public class Service {
+	
+	CreditCard creditCard = new CreditCard();
+	
+	BankPayment bankPayment = new BankPayment();
+	
+	Ticket ticket = new Ticket();
+	
+	public boolean processPayment() {
+		
+		
+		
+		return false;
+		
+		
+		
+	}
+}

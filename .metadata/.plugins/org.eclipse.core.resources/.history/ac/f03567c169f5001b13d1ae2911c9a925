@@ -1,0 +1,20 @@
+package com.ektha.tba.service;
+
+public class PaymentService {
+
+	public String bookTicket(float availableCredit, float ticketAmount) {
+
+		BookingService bookingService = new BookingService();
+
+		String confirmationNumber = null;
+
+		if (availableCredit >= ticketAmount) {
+
+			confirmationNumber = bookingService.bookTicket();
+		}
+
+		return confirmationNumber;
+
+	}
+
+}

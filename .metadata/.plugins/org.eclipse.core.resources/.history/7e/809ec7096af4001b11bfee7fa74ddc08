@@ -1,0 +1,11 @@
+package com.ektha.app.dao;
+
+public class Customer {
+	
+	private String firstName;
+	private String lastName;
+	private GenderType genderType;
+	private String email;
+	private String city;
+
+}

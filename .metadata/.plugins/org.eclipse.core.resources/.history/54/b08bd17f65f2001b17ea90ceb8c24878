@@ -1,0 +1,30 @@
+package com.ektha.corejava.item;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class TestItem {
+
+	public static void main(String[] args) {
+
+		ArrayList<Item> itemList = new ArrayList<Item>();
+
+		itemList.add(new Item(11, "Dress", 500));
+		itemList.add(new Item(10, "Bags", 400));
+		itemList.add(new Item(12, "Shoes", 200));
+		itemList.add(new Item(2, "Phone", 150));
+
+//		Collections.sort(itemList, new ItemPriceComparator());
+		Collections.sort(itemList, new ItemNameComparator());
+//		Collections.sort(itemList);
+		
+//		Collections.sort(itemList, new Item());
+//		Collections.sort(itemList, new ItemIdComparator());
+
+		for (Item item : itemList) {
+			System.out.println(item);
+		}
+
+	}
+
+}

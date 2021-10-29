@@ -1,0 +1,7 @@
+package com.ektha.corejava.item;
+
+public interface Comparator <Item> {
+
+	
+	
+}

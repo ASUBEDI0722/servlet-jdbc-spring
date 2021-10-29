@@ -1,0 +1,36 @@
+package com.ektha.corejava.javasyntax;
+
+import java.util.Scanner;
+
+public class StudentDemo {
+
+	public static void main(String[] args) {
+		
+		String firstName;
+		String lastName;
+		int age;
+
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Please enter your first name");
+		firstName = scanner.next();
+		
+		System.out.println("Please enter your last name");
+		lastName = scanner.next();
+		
+		System.out.println("Please enter your age");
+		age = scanner.nextInt();
+		
+		studentDetails(firstName, lastName, age);
+		
+		scanner.close();
+	}
+	
+	public static void studentDetails(String firstName, String lastName, int age) {
+		
+		Student student = new Student();
+		String output = student.printInfo(lastName);
+		System.out.println(output);
+	}
+
+}

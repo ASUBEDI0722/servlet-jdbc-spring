@@ -1,0 +1,15 @@
+package com.ektha.tba.dao;
+
+import com.ektha.tba.entity.Ticket;
+
+public class BookingDAO {
+	
+
+	
+	public void saveTicket() {
+		
+		Ticket ticket = new Ticket();
+		
+	}
+
+}

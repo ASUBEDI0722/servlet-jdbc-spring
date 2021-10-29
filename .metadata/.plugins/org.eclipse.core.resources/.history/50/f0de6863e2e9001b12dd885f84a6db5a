@@ -1,0 +1,46 @@
+package com.ektha.corejava.name;
+
+import java.util.LinkedList;
+
+public class Person {
+
+	public static void main(String[] args) {
+
+		LinkedList <String> linkedList = new LinkedList<String>();
+		linkedList.add("Anamika");
+		linkedList.add("Amit");
+		linkedList.add("Anurang");
+		linkedList.add("Neha");
+		linkedList.add("Aachala");
+		
+		
+		LinkedList <String> linkedList1 = new LinkedList<String>();
+		linkedList1.add("A");
+		linkedList1.add("B");
+		linkedList1.add("C");
+		linkedList1.add("D");
+		linkedList1.add("E");
+		
+		
+		linkedList.addAll(linkedList1);
+		
+//		System.out.println(linkedList);
+		
+		
+		System.out.println(linkedList1.get(3));
+		
+		for (String string : linkedList) {
+			System.out.println(string);
+		}
+		
+//		System.out.println(linkedList1);
+		
+//		System.out.println(linkedList.contains("Anamika"));
+//		
+//		System.out.println(linkedList);
+//		
+//		System.out.println(linkedList.size());
+//		
+	}
+
+}

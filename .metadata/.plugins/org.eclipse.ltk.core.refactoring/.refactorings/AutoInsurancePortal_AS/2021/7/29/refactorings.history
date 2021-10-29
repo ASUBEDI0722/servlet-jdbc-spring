@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;AutoInsurancePortal&apos;&#x0D;&#x0A;- Original project: &apos;AutoInsurancePortal&apos;&#x0D;&#x0A;- Original element: &apos;AutoInsurancePortal/src/com.ektha.autoinsurance.com.ektha.autoinsurance&apos;" description="Delete element" element1="/src&lt;com.ektha.autoinsurance.com.ektha.autoinsurance" element2="/src&lt;com.ektha.autoinsurance.com.ektha" element3="/src&lt;com.ektha.autoinsurance.com" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1626149274156" subPackages="false" version="1.0"/>
+</session>

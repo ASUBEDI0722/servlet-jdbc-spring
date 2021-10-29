@@ -1,0 +1,63 @@
+package com.ektha.corejava.studentmanagementsystem;
+
+import java.util.ArrayList;
+
+public class StudentService {
+
+	Student student = new Student();
+
+	ArrayList<Student> arrayList = new ArrayList<Student>();
+
+	public Student addStudent(Student student) {
+
+		arrayList.add(student);
+		return student;
+	}
+
+	public ArrayList<Student> getAllStudent() {
+		return arrayList;
+	}
+
+	public Student findStudent(int studentId) {
+		
+		Student student = new Student();
+		
+		if (student.getStudentId() == studentId) {
+			
+			for (Student student1 : arrayList) {
+				System.out.println(student1);
+			}
+			
+//			student.setStudentId(studentId);
+//			student.setStudentName("name");
+//			student.setPhoneNumber("number");
+
+		}
+
+		return student;
+
+	}
+	
+	public Student updateStudent(int studentId) {
+		
+		Student student = new Student();
+		
+		student.setStudentId(studentId);
+		student.setStudentName(null);
+		return student;
+		
+		
+		
+	}
+
+//	public Student findStudent(int studentId) {
+//		for(Student s : arrayList) {
+//			if(s.getStudentId() == studentId) {
+//				return s;
+//			}
+//		}
+//		
+//		return null;
+//	}
+
+}

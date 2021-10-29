@@ -1,0 +1,78 @@
+package com.ektha.corejava.employee;
+
+import java.time.LocalDate;
+
+public class Employee {
+
+	private int id;
+	private String name;
+	private LocalDate dob;
+	private String email;
+	private String phoneNumber;
+	private GenderType gender;
+
+	public Employee() {
+
+	}
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public LocalDate getDob() {
+		return dob;
+	}
+
+	public void setDob(LocalDate dob) {
+		this.dob = dob;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	public GenderType getGender() {
+		return gender;
+	}
+
+	public void setGender(GenderType gender) {
+		this.gender = gender;
+	}
+
+	public int calculateSalary(int Salary) {
+		
+		if(Salary >= 8000) {
+			System.out.println("Employee is permanent Employee.");
+		}
+		
+		else if(Salary < 90000) {
+			System.out.println("Employee is contract employee.");
+		}
+		
+		return Salary;
+	}
+}

@@ -1,0 +1,75 @@
+package com.ektha.corejava.studentmanagementsystem;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class StudentManagementApp {
+
+	public static void main(String[] args) {
+
+		String studentName;
+		int studentId;
+		String phoneNumber;
+		String student;
+
+		StudentService studentService = new StudentService();
+
+		Scanner scanner = new Scanner(System.in);
+		do {
+			System.out.println("Student information.");
+			System.out.println("If add Enter 1, If update enter 2, and if get details enter 3");
+
+			student = scanner.next();
+
+			if (student.equals("1")) {
+
+				Student student1 = new Student();
+
+				System.out.println("Enter student id");
+				studentId = scanner.nextInt();
+
+				System.out.println("Enter student name");
+				studentName = scanner.next();
+
+				System.out.println("Enter student phone number");
+				phoneNumber = scanner.next();
+
+				student1.setStudentId(studentId);
+				student1.setStudentName(studentName);
+				student1.setPhoneNumber(phoneNumber);
+				studentService.addStudent(student1);
+
+			}
+
+			else if (student.equals("2")) {
+				ArrayList<Student> studentList = studentService.getAllStudent();
+				for (Student s : studentList) {
+					System.out.println(s);
+				}
+
+			}
+
+			else if (student.equals("3")) {
+				System.out.println("Enter student id");
+				studentId = scanner.nextInt();
+
+				Student student1 = studentService.findStudent(studentId);
+
+				if (student1 != null) {
+					System.out.println("Enter student name");
+					String s = scanner.next();
+					System.out.println("Enter student phoneNumber");
+					String p = scanner.next();
+
+					student1.setStudentName(s);
+					student1.setPhoneNumber(p);
+				} else {
+					System.out.println("No student id found.");
+				}
+
+			}
+		} while (true);
+	
+	}
+
+}

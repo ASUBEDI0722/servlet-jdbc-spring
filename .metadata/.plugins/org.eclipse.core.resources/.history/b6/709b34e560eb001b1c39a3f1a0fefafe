@@ -1,0 +1,26 @@
+package com.ektha.corejava.collectiondoublelist;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		doublelist();
+
+	}
+
+	public static void doublelist() {
+
+		ArrayList<String> arrayList = new ArrayList<String>();
+		arrayList.add("how");
+		arrayList.add("are");
+		arrayList.add("you?");
+
+		for (int i = 0; i < arrayList.size(); i += 2) {
+		arrayList.addAll(i, arrayList.get(i));
+		}
+
+	}
+}

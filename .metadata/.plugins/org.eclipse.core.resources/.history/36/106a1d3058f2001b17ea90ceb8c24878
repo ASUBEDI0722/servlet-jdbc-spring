@@ -1,0 +1,11 @@
+package com.ektha.corejava.entity;
+
+public class Product {
+	
+	private int id;
+	private String name;
+	private float price;
+	private String description;
+	private int quantity;
+
+}

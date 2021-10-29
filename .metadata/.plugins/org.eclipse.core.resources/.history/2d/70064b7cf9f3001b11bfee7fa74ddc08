@@ -1,0 +1,25 @@
+package com.sit.app.dao;
+
+import java.sql.Connection;
+
+public class BaseDAO {
+
+	private static final String URL = "jdbc:mysql://localhost:3306/test?useSSL=false";
+	
+	public Connection getConnection() {
+		
+		Connection connection = null;
+		
+		try {
+			
+			
+		}catch(Exception e) {
+			
+			e.printStackTrace();
+		}
+		return connection;
+		
+		
+	}
+	
+}

@@ -1,0 +1,24 @@
+package com.ektha.tba.service;
+
+import com.ektha.tba.entity.BankPayment;
+import com.ektha.tba.entity.CreditCard;
+
+public class BookingService {
+
+	public String processPayment(CreditCard creditCard, BankPayment bankPayment) {
+		
+		PaymentService paymentService = new PaymentService();
+
+		
+		
+		if (creditCard.getNameOnCard() == bankPayment.getNameOnCard()
+				&& creditCard.getCreditCardNumber() == bankPayment.getCreditCardNumber()
+				&& creditCard.getCvv() == bankPayment.getCvv()) {
+			
+		}
+
+		return null;
+
+	}
+
+}

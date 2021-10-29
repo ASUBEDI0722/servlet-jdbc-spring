@@ -1,0 +1,36 @@
+package com.ektha.tba.service;
+
+import java.util.Random;
+
+public class PaymentService {
+
+	public String bookTicket(float availableCredit, float ticketAmount) {
+
+		String randomNumber = null;
+
+		if (availableCredit >= ticketAmount) {
+
+			randomNumber = getRandomCode();
+		}
+
+		else {
+
+			System.out.println("Insufficient funds for booking ticket.");
+		}
+		return randomNumber;
+
+	}
+
+	public String getRandomCode() {
+
+		String alphaCharacter = "XUJ";
+
+		Random random = new Random();
+
+		int randomNumber = random.nextInt(783567);
+
+		return alphaCharacter + randomNumber;
+
+	}
+
+}

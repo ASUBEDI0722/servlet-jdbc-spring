@@ -1,0 +1,6 @@
+package com.ektha.app.dao;
+
+public interface ICustomerDAO {
+
+	void addCustomer(Customer customer);
+}

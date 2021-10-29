@@ -1,0 +1,29 @@
+package com.ektha.pms.service;
+
+import com.ektha.pms.dao.ProductDAO;
+
+import com.ektha.pms.entity.Product;
+
+public class ProductService {
+	
+	ProductDAO productDao = new ProductDAO();
+
+	public Product addProduct(Product product) {
+		
+		Product product1 = productDao.addProduct(product);
+		
+		return product1;
+		
+		
+	}
+	
+	public Product findProduct(int id) {
+		
+		Product product2 = productDao.findProductById(id);
+		
+		return product2;
+	}
+
+	
+	
+}

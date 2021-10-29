@@ -1,0 +1,19 @@
+package com.ektha.corejava.ooppractice;
+
+public class CustomerDemo {
+
+	public static void main(String[] args) {
+
+		Customer customer = new Customer(101, "Anamika", "07/07/2020", "anamika@gmail.com");
+
+		String customerInfo = customer.printCustomerDetails();
+
+		System.out.println(customerInfo);
+
+		Customer customer1 = new Customer(102, "Anurag", "07/08/2020", "anurag@gmail.com");
+
+		System.out.println(customer1.printCustomerDetails());
+
+	}
+
+}

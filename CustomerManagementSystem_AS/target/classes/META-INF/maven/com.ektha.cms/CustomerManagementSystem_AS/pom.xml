@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.ektha.cms</groupId>
+	<artifactId>CustomerManagementSystem_AS</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>CustomerManagement</name>
+
+	<properties>
+
+		<java.version>1.8</java.version>
+		<spring.version>4.3.11.RELEASE</spring.version>
+		<apache.version>2.5.0</apache.version>
+
+		<apache-version>2.5.0</apache-version>
+		<mysqlconnector.version>8.0.23</mysqlconnector.version>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+
+	</properties>
+
+
+	<dependencies>
+
+		<!-- dependencies to use ApplicationContext container -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- dependency to use spring jdbc -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- dependencies for mysql connector -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysqlconnector.version}</version>
+		</dependency>
+		<!-- dependency for working with connection pool -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-dbcp2</artifactId>
+			<version>${apache.version}</version>
+		</dependency>
+
+
+
+	</dependencies>
+
+
+
+
+</project>

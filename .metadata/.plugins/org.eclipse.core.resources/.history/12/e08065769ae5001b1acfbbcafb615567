@@ -1,0 +1,30 @@
+package com.ektha.corejava.employee;
+
+import java.time.LocalDate;
+
+public class PermanentEmployee extends Employee {
+
+	private LocalDate dateOfJoining;
+
+	public PermanentEmployee() {
+
+	}
+
+	public LocalDate getDateOfJoining() {
+		return dateOfJoining;
+	}
+
+	public void setDateOfJoining(LocalDate dateOfJoining) {
+		this.dateOfJoining = dateOfJoining;
+	}
+
+	public int calculateSalary(int Salary) {
+		
+		if(Salary == 80000) {
+			System.out.println("Employee is full time");
+		}
+		return Salary;
+
+	}
+
+}

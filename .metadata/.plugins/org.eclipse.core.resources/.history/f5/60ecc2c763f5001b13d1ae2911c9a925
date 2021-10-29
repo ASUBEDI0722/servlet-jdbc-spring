@@ -1,0 +1,29 @@
+package com.ektha.tba.service;
+
+import java.util.Random;
+
+import com.ektha.tba.entity.BankPayment;
+import com.ektha.tba.entity.CreditCard;
+
+public class BookingService {
+	
+	public String getRandomCode() {
+
+		String alphaCharacter = "XUJ";
+
+		Random random = new Random();
+
+		int randomNumber = random.nextInt(783567);
+
+		return alphaCharacter + randomNumber;
+
+	}
+
+	public String processPayment(CreditCard creditCard, BankPayment bankPayment) {
+		
+		PaymentService paymentService = new PaymentService();
+
+		
+	}
+
+}

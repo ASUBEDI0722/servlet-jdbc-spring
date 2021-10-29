@@ -1,0 +1,18 @@
+package com.ektha.tba.entity;
+
+public class CreditCard extends Payment {
+	
+	String creditCardNumber;
+	int cvv;
+	
+	public CreditCard() {
+
+	}
+
+	
+	
+	
+	
+	
+
+}

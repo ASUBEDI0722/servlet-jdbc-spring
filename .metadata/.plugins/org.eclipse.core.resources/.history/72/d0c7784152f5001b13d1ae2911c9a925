@@ -1,0 +1,54 @@
+package com.ektha.tba.app;
+
+import java.util.Scanner;
+
+import com.ektha.tba.entity.BankPayment;
+
+public class BookingPortal {
+
+	public static void main(String[] args) {
+
+		String nameOnCard;
+		String creditCardNumber;
+		int cvv;
+		float amount;
+		float availableCredit;
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter name on your card.");
+		nameOnCard = scanner.next();
+		
+		System.out.println("Enter your credit card number");
+		creditCardNumber = scanner.next();
+		
+		System.out.println("Enter CVV");
+		cvv = scanner.nextInt();
+		
+		System.out.println("Enter ticket price.");
+		amount = scanner.nextFloat();
+		
+		System.out.println("enter available credit.");
+		availableCredit = scanner.nextFloat();
+		
+		initialData(nameOnCard, creditCardNumber, cvv, availableCredit);
+		
+		
+		
+		
+	}
+	
+	public static void initialData(String name, String ccNumber, int cvv, float availableCredit) {
+		
+		BankPayment bankPayment = new BankPayment();
+		
+		bankPayment.setNameOnCard(name);
+		bankPayment.setCreditCardNumber(ccNumber);
+		bankPayment.setCVV(cvv);
+		bankPayment.setAvailablCredit(availableCredit);
+		
+		
+		
+	}
+
+}

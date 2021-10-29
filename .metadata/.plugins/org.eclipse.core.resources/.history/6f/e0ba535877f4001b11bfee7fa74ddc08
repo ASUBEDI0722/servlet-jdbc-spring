@@ -1,0 +1,41 @@
+package com.ektha.app.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import cm.ektha.app.entity.Customer;
+
+public class CustomerDAO extends CustomerBaseDAO implements ICustomerDAO {
+	
+	private static String SQL_INSERT = "insert into customer_schema.customer(id, firstname, lastname, gender, email, city) values (?,?,?,?,?,?)";
+
+	@Override
+	public void addCustomer(Customer customer) {
+
+		try(Connection connection = getConnection()){
+			
+			PreparedStatement preparedStatement = connection.prepareStatement(SQL_INSERT);
+			
+			preparedStatement.setInt(1, customer.getId());
+			preparedStatement.setString(2, customer.getFirstName());
+			preparedStatement.setString(3, customer.getLastName());
+			preparedStatement.setObject(4, GenderType.FEMALE.toString());
+			preparedStatement.setObject(4,GenderType.MALE.toString());
+			preparedStatement.setObject(4, GenderType.OTHERS.toString());
+			preparedStatement.setString(5, customer.getEmail());
+			preparedStatement.setString(6, customer.getCity());
+			
+
+			
+
+			
+			
+			
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

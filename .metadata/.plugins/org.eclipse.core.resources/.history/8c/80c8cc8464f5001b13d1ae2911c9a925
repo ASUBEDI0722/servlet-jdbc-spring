@@ -1,0 +1,20 @@
+package com.ektha.tba.service;
+
+import java.util.Random;
+
+
+public class BookingService {
+
+	public String bookTicket() {
+
+		String alphaCharacter = "XUJ";
+
+		Random random = new Random();
+
+		int randomNumber = random.nextInt(783567);
+
+		return alphaCharacter + randomNumber;
+
+	}
+
+}

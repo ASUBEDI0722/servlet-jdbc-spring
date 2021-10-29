@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="ISO-8859-1">
+
+
+<title>Company Registration Form</title>
+
+</head>
+
+<body bgcolor="Lightskyblue" style="text-align:center"> 
+
+<h1>Registration Form</h1>
+
+<form>
+	<label for="FirstName"> <b>First Name</b></label> <input type ="text"
+	placeholder = "Enter first name" required> <br><br>
+	
+	<label for="LastName"> <b>Last Name</b></label> <input type ="text"
+	placeholder = "Enter last name" required> <br><br>
+	
+	<input type="checkbox" name="Male" value="Male"> Male<br> <input type="checkbox" name="Female" value="Female"> Female<br>
+	
+	<label for="Email"> <b>Email</b></label> <input type ="text"
+	placeholder = "Enter email" required> <br><br>
+	
+	<label for="City"> <b>City</b></label> <input type ="text"
+	placeholder = "Enter city" required> <br><br>
+	
+	
+	<input type="button" value="Submit"/>  
+	
+
+</form>
+
+
+</body>
+</html>

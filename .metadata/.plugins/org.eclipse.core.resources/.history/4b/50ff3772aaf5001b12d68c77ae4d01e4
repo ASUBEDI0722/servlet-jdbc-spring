@@ -1,0 +1,21 @@
+package com.ektha.tba.service;
+
+import com.ektha.tba.entity.CreditCard;
+import com.ektha.tba.entity.Ticket;
+
+public class PaymentService {
+
+	public boolean bookTicket(CreditCard creditCard, Ticket ticket) {
+
+		
+		
+
+		
+		return false;
+
+
+	}
+	
+
+
+}

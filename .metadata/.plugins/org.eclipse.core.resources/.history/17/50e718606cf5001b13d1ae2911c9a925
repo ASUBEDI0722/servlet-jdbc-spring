@@ -1,0 +1,12 @@
+package com.ektha.tba.controller;
+
+import com.ektha.tba.entity.CreditCard;
+import com.ektha.tba.entity.PaymentDBTable;
+import com.ektha.tba.service.BookingService;
+
+public class BookingController {
+	
+	
+	
+		
+}

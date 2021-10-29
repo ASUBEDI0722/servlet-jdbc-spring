@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="copying" basedir=".">
+	<property name="tomcat"
+		value="C:\bcjJUNE21\tools\apache-tomcat-9.0.52-windows-x64\apache-tomcat-9.0.52" />
+	<property name="tomcat.deployment" value="${tomcat}\webapps" />
+	<property name="tomcat.bin" value="${tomcat}\bin" />
+	<property name="base" value="." />
+	<property name="source" value="${base}/src" />
+	<property name="source" value="${base}/src/main/webapp" />
+	<property name="dest" value="${base}\WebContent" />
+
+
+	<!-- copying war file -->
+
+	<target name="copying">
+		<copy todir="${dest}">
+			<fileset dir="${source}" />
+		</copy>
+		<antcall target="warTarget" />
+
+
+	</target>
+
+	<!-- building -->
+	<target name="warTarget">
+		<war warfile="artifacts\registration.war" needxmlfile="false">
+			<fileset dir="${base}\WebContent\main\webapp\" />
+		</war>
+
+		<antcall target="deployTarget" />
+
+
+	</target>
+
+	<!--deploying war file to tomcat -->
+	<target name="deployTarget">
+		<copy file="${base}\artifacts\registration.war"
+			todir="${tomcat.deployment}" />
+		<antcall target="startTomcat" />
+	</target>
+
+
+	<target name="startTomcat">
+
+		<exec executable="${tomcat.bin}\startup.bat" />
+
+	</target>
+
+	<target name="stopTarget">
+
+
+		<exec executable="${tomcat.bin}\shutdown.bat" />
+
+	</target>
+
+
+
+
+
+</project>

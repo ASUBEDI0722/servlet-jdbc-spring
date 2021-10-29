@@ -1,0 +1,9 @@
+package com.ektha.tba.service;
+
+import java.util.Random;
+
+public class PaymentService {
+
+	
+
+}

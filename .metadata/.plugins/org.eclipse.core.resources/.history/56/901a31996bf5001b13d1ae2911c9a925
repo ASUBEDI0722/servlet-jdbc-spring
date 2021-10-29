@@ -1,0 +1,24 @@
+package com.ektha.tba.controller;
+
+import com.ektha.tba.entity.CreditCard;
+
+public class BookingController {
+	
+	
+	public static CreditCard initiateData(String name, String ccNumber, int cvv, float availableCredit) {
+		
+		CreditCard creditCard = new CreditCard();
+		
+		return creditCard;
+		
+		
+
+	}
+	
+//	public String bookTicket() {
+//		
+//		
+//		
+//	}
+
+}
